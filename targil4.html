@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>targil4</title>
+    <link rel="stylesheet" type="text/css" href="targil4.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Colledge Admissions Calculator</h1>
+      <div class="row">
+        <label for="age">age:</label>
+        <input type="number" id="age" name="age" />
+      </div>
+      <div class="row">
+        <fieldset>
+          <legend>Select from the below options:</legend>
+          <label for="psy"> Psychomtric and Bagrut</label>
+          <input
+            type="radio"
+            id="PsyBagrut"
+            name="Bagrut"
+            value="PsyBagrut"
+            onclick="disableMechina()"
+          />
+          <label for="psy"> Mechina and Bagrut</label>
+          <input
+            type="radio"
+            id="MchBagrut"
+            name="Bagrut"
+            value="MchBagrut"
+            onclick="disablePsy()"
+          />
+        </fieldset>
+      </div>
+      <div class="row">
+        <label for="Psychomtric">Psychomtric Grade:</label>
+        <input
+          type="number"
+          id="Psychomtric"
+          name="GPsychomtric"
+          value="GPsychomtric"
+        />
+      </div>
+      <div class="row">
+        <label for="Bagrut">Bagrut Grade:</label>
+        <input type="number" id="GBagrut" name="GBagrut" />
+      </div>
+      <div class="row">
+        <label for="Mechina">Mechina Grade:</label>
+        <input type="number" id="Mechina" name="GMechina" />
+      </div>
+      <div class="row">
+        <button onclick="validate()">Validate</button>
+      </div>
+      <p class="green" id="green"></p>
+    </div>
+    <script src="targil4.js"></script>
+  </body>
+</html>
